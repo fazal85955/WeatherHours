@@ -1,0 +1,43 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+  </style>
+
+  <style name="PreferenceThemeOverlay.v14.Material">
+    <item name="android:background">#ffffff</item>
+  </style>
+
+  <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:windowBackground">@drawable/dialog_bg</item>
+  </style>
+
+  <style name="PreferenceFragment">
+    <item name="android:paddingTop">?attr/actionBarSize</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+  <style name="CustomTitle"
+      parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <item name="android:fontFamily">@font/merienda_regular</item>
+  </style>
+
+  <style name="CustomSubTitle"
+      parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+    <item name="android:fontFamily">@font/roboto_light</item>
+  </style>
+
+</resources>

@@ -1,0 +1,274 @@
+<resources>
+
+    <string name="app_name">Weather Hours</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_RateUs">Rate Us</string>
+    <string name="catModify">Modify</string>
+    <string name="catCommunicate">Communicate</string>
+
+    <!--values defined in xml-->
+    <string name="imgShare">Share</string>
+    <string name="hourNowTitle">Now</string>
+    <string name="TempTitle">Temperature</string>
+    <string name="weatherDes">Weather Icon</string>
+    <string name="tmpMinTitle">Min</string>
+    <string name="tmpMaxTitle">Max</string>
+    <string name="windTitle">Wind</string>
+    <string name="windDirTitle">Wind Direction</string>
+    <string name="pressureTitle">Pressure</string>
+    <string name="seaLvlLabel">Sea Level</string>
+    <string name="grndLvlLabel">Ground Level</string>
+    <string name="humidityTitle">Humidity</string>
+    <string name="sunTitle">Sun</string>
+    <string name="sunriseLabel">Sunrise</string>
+    <string name="sunsetLabel">Sunset</string>
+    <string name="detailedTxtCaption">More details for today</string>
+    <string name="copyrightLabel">Copyright 2018</string>
+
+    <!--Values defined in java-->
+    <string name="error404">Internet is not connected! Please turn on internet in order to update weather data.</string>
+    <string name="city404">City not found! Please retype city name correctly, you might have misspelled it.</string>
+    <string name="success100">Weather updated successfully</string>
+
+    <string name="menu_Add">Add</string>
+    <string name="menu_Delete">Delete</string>
+    <string name="menu_Update">Update</string>
+
+    <!--Values defined in preference-->
+    <string name="tempPref">Temperature Unit</string>
+
+
+    <string name="windPref">Wind Speed Unit</string>
+    <string name="pressurePref">Pressure Unit</string>
+    <string name="time">Time Format</string>
+    <string name="dateFormatPref">Date Format</string>
+    <string name="weatherPref">Weather update rate</string>
+    <string name="pref_header_about">About</string>
+    <string name="summary_about">We are a team of like-minded people, specialized in development of Android App Development creating new trends across the app space. Glad to Help in anyway!</string>
+    <string name="summary_support">Got any queries? We are happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="title_faq">FAQ</string>
+    <string name="summary_faq">View frequently asked questions</string>
+    <string name="title_version">Version</string>
+
+    <string name="proLabelPW">Please wait...</string>
+    <string name="proLabelAF">Almost finished...</string>
+    <string name="proDetailPW">Loading weather details</string>
+    <string name="proDetailGL">Getting current location</string>
+
+    <string name="directionNorth">North</string>
+    <string name="directionWest">West</string>
+    <string name="directionEast">East</string>
+    <string name="directionSouth">South</string>
+
+    <string name="dialogSub">Select city</string>
+    <string name="dialogCC">City, Country</string>
+    <string name="dialogCancel">Cancel</string>
+    <string name="dialogAC">Add city</string>
+    <string name="dialogUGPS">Use GPS</string>
+    <string name="dialogError">Error</string>
+    <string name="dialogOK">OK</string>
+
+    <string name="shareLink">Hey try out this app at:</string>
+
+
+    <string name="menu_Home">Home</string>
+    <string name="keyWeather">Weather</string>
+    <string name="keyClock">Clock</string>
+    <string name="keyToday">Today</string>
+    <string name="airCalm">Calm</string>
+    <string name="airGale">Gale</string>
+    <string name="airStorm">Storm</string>
+    <string name="airHurricane">Hurricane</string>
+    <string name="airLightAir">Light Air</string>
+    <string name="airStrongBreeze">Strong Breeze</string>
+
+    <string name="desThunderstorm">Thunderstorm</string>
+    <string name="desDrizzle">Drizzle</string>
+    <string name="desRain">Rain</string>
+    <string name="desSnow">Snow</string>
+    <string name="desAtmosphere">Atmosphere</string>
+    <string name="desClouds">Clouds</string>
+    <string name="airLightBreeze">Light Breeze</string>
+    <string name="airGentleBreeze">Gentle Breeze</string>
+    <string name="airModerateBreeze">Moderate Breeze</string>
+    <string name="airFreshBreeze">Fresh Breeze</string>
+    <string name="airNearGale">Near Gale</string>
+    <string name="airViolentStorm">Violent Storm</string>
+    <string name="desClear">Clear</string>
+
+    <string name="signDegree" translatable="false">º</string>
+
+    <string name="tempDefaultValue" translatable="false">c</string>
+    <array name="tmpUnitValues">
+        <item>@string/tempDefaultValue</item>
+        <item>f</item>
+    </array>
+    <array name="tmpUnitTitle">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </array>
+
+    <string name="windDefaultValue" translatable="false">kph</string>
+    <array name="windUnitValues">
+        <item>b</item>
+        <item>cps</item>
+        <item>mps</item>
+        <item>fps</item>
+        <item>mph</item>
+        <item>@string/windDefaultValue</item>
+        <item>knots</item>
+    </array>
+    <array name="windUnitTitles">
+        <item>Beaufort</item>
+        <item>Centimeter per second</item>
+        <item>Meter per second</item>
+        <item>Foot per second</item>
+        <item>Mile per hour</item>
+        <item>Kilometer per hour</item>
+        <item>Knots</item>
+    </array>
+
+    <string name="pressureDefaultValue" translatable="false">hPa</string>
+    <array name="pressureUnitValues">
+        <item>at</item>
+        <item>atm</item>
+        <item>bar</item>
+        <item>mbar</item>
+        <item>inHg</item>
+        <item>kgfcm2</item>
+        <item>kgfm2</item>
+        <item>Pa</item>
+        <item>@string/pressureDefaultValue</item>
+        <item>kPa</item>
+        <item>MPa</item>
+        <item>mmH2O</item>
+        <item>mmHg</item>
+        <item>Nm2</item>
+        <item>psi</item>
+        <item>psf</item>
+        <item>Torr</item>
+    </array>
+    <array name="pressureUnitTitles">
+        <item>technical atmosphere</item>
+        <item>physical atmosphere</item>
+        <item>bar</item>
+        <item>millibar</item>
+        <item>inch of mercury</item>
+        <item>kilogram force/cm²</item>
+        <item>kilogram force/m²</item>
+        <item>pascal</item>
+        <item>hectopascal</item>
+        <item>kilopascal</item>
+        <item>megapascal</item>
+        <item>millimeter water column</item>
+        <item>millimeter of mercury</item>
+        <item>newton per square meter</item>
+        <item>pound per square inch</item>
+        <item>pound per square foot</item>
+        <item>Torr</item>
+    </array>
+
+    <string name="timeFormatDefaultValue" translatable="false">hh</string>
+    <array name="timeFormatValues">
+        <item>@string/timeFormatDefaultValue</item>
+        <item>kk</item>
+    </array>
+    <array name="timeFormatTitles">
+        <item>12 hours</item>
+        <item>24 hours</item>
+    </array>
+
+    <string name="dateFormatDefaultValue" translatable="false">EEEE, MMMM dd, yyyy</string>
+    <array name="dateFormatValues">
+        <item>MMMM dd, yyyy - EEEE</item>
+        <item>MM/dd/yyyy - EEEE</item>
+        <item>MM-dd-yyyy - EEEE</item>
+        <item>MMMM dd, yyyy</item>
+        <item>MM/dd/yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMMM dd</item>
+        <item>@string/dateFormatDefaultValue</item>
+        <item>EEEE, dd MMMM yyyy</item>
+        <item>EEEE, dd-MM-yyyy</item>
+        <item>EEEE, dd MMMM</item>
+        <item>EEEE, MMM dd</item>
+        <item>EEEE, dd</item>
+        <item>dd/MM/yyyy - EEEE</item>
+        <item>dd-MM-yyyy - EEEE</item>
+        <item>dd.MMMM.yyyy</item>
+        <item>dd/MM/yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>dd.MM.yyyy</item>
+        <item>dd MMMM</item>
+        <item>dd.MM</item>
+        <item>yyyy/MM/dd - EEEE</item>
+        <item>yyyy-MM-dd - EEEE</item>
+        <item>yyyy-MM-dd</item>
+    </array>
+    <array name="dateFormatTitles">
+        <item>MMM dd, yyyy - Day</item>
+        <item>MM/dd/yyyy - Day</item>
+        <item>MM-dd-yyyy - Day</item>
+        <item>MMM dd, yyyy</item>
+        <item>MM/dd/yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMM dd</item>
+        <item>Day, MMM dd, yyyy</item>
+        <item>Day, dd MMM yyyy</item>
+        <item>Day, dd-MM-yyyy</item>
+        <item>Day, dd MMM</item>
+        <item>Day, MMM dd</item>
+        <item>Day, dd</item>
+        <item>dd/MM/yyyy - Day</item>
+        <item>dd-MM-yyyy - Day</item>
+        <item>dd.MMM.yyyy</item>
+        <item>dd/MM/yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>dd.MM.yyyy</item>
+        <item>dd MMM</item>
+        <item>dd.MM</item>
+        <item>yyyy/MM/dd - Day</item>
+        <item>yyyy-MM-dd - Day</item>
+        <item>yyyy-MM-dd</item>
+    </array>
+
+    <string name="weatherUpdateDefaultValue" translatable="false">15m</string>
+    <array name="weatherUpdateRateValues">
+        <item>@string/weatherUpdateDefaultValue</item>
+        <item>30m</item>
+        <item>1h</item>
+        <item>2h</item>
+        <item>3h</item>
+        <item>6h</item>
+        <item>1d</item>
+    </array>
+    <array name="weatherUpdateRateTitles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Once in a day</item>
+    </array>
+
+    <string name="app_version" translatable="false">3</string>
+    <string name="key_send_feedback" translatable="false">key_send_feedback</string>
+
+    <string name="addressPlayStore" translatable="false">https://play.google.com/store/apps/details?id=com.apps.sfrcreativity.weatherhours</string>
+    <string name="adAppID" translatable="false">ca-app-pub-2495757533141811~9378539680</string>
+    <string name="adSMARTBANNER" translatable="false">ca-app-pub-2495757533141811/9657563670</string>
+    <string name="adINTERSTITIAL" translatable="false">ca-app-pub-2495757533141811/1146796066</string>
+    <string name="sample_adAppID" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="sample_adSMARTBANNER" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="sample_adINTERSTITIAL" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+
+
+</resources>

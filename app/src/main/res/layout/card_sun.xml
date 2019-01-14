@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/cardviews">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/evenSmallerMargin">
+
+            <TextView
+                android:id="@+id/td"
+                android:text="@string/sunTitle"
+                style="@style/H6.tv"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/ld"
+                style="@style/lineView"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:baselineAligned="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum=".1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ld">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".05"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:text="@string/sunriseLabel"
+                        android:alpha=".87"
+                        android:textColor="@color/textViews" />
+
+                    <ImageView
+                        android:contentDescription="@string/sunriseLabel"
+                        android:id="@+id/imgSunrise"
+                        android:layout_width="@dimen/card_adaptive"
+                        android:layout_height="@dimen/card_adaptive"
+                        android:src="@drawable/icon_sunrise" />
+
+                    <TextView
+                        android:id="@+id/txtTimeSunrise"
+                        style="@style/Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/evenSmallerMargin"
+                        android:textColor="@color/textViews" />
+
+                    <TextView
+                        android:id="@+id/txtDateSunrise"
+                        style="@style/Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/evenSmallerMargin"
+                        android:alpha=".6"
+                        android:textColor="@color/textViews" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".05"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallMargin"
+                        android:text="@string/sunsetLabel"
+                        android:alpha=".87"
+                        android:textColor="@color/textViews" />
+
+                    <ImageView
+                        android:contentDescription="@string/sunsetLabel"
+                        android:id="@+id/imgSunset"
+                        android:layout_width="@dimen/card_adaptive"
+                        android:layout_height="@dimen/card_adaptive"
+                        android:src="@drawable/icon_sunset" />
+
+                    <TextView
+                        android:id="@+id/txtTimeSunset"
+                        style="@style/Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/evenSmallerMargin"
+                        android:text=""
+                        android:textColor="@color/textViews" />
+
+                    <TextView
+                        android:id="@+id/txtDateSunset"
+                        style="@style/Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/evenSmallerMargin"
+                        android:text=""
+                        android:alpha=".6"
+                        android:textColor="@color/textViews" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>

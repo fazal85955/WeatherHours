@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/cardviews">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/smallMargin"
+            android:paddingBottom="@dimen/smallMargin"
+            android:layout_marginStart="@dimen/evenSmallerMargin"
+            android:layout_marginEnd="@dimen/evenSmallerMargin">
+
+            <TextView
+                android:id="@+id/td"
+                android:text="@string/pressureTitle"
+                style="@style/H6.tv"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/ld"
+                style="@style/lineView"
+                tools:ignore="MissingConstraints" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_marginTop="@dimen/smallMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sLvl"
+        app:layout_constraintEnd_toStartOf="@id/gLvl"
+        app:layout_constraintTop_toBottomOf="@id/ld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                    android:contentDescription="@string/pressureTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/imgAtmPres"
+                    android:layout_width="@dimen/card_icon36"
+                    android:layout_height="@dimen/card_icon36"
+                    android:layout_marginStart="@dimen/smallMargin"
+                    android:layout_marginEnd="@dimen/evenSmallerMargin"
+                    android:src="@drawable/atmospheric_pressure" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/imgAtmPres"
+                        app:layout_constraintBottom_toBottomOf="@id/imgAtmPres"
+                        android:id="@+id/txtSeaLvl"
+                        style="@style/Body2"
+                        android:layout_marginStart="@dimen/evenSmallerMargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textViews" />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@id/imgAtmPres"
+                        app:layout_constraintBottom_toTopOf="@id/txtSeaLvl"
+                        style="@style/Body2"
+                        android:layout_marginStart="@dimen/evenSmallerMargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seaLvlLabel"
+                        android:layout_marginBottom="@dimen/evenSmallerMargin"
+                        android:alpha=".6"
+                        android:textColor="@color/textViews" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_marginTop="@dimen/smallMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gLvl"
+        app:layout_constraintStart_toEndOf="@id/sLvl"
+        app:layout_constraintTop_toBottomOf="@id/ld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/txtGrndLvl"
+                        android:layout_marginStart="@dimen/evenSmallerMargin"
+                        style="@style/Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textViews" />
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/txtGrndLvl"
+                        style="@style/Body2"
+                        android:layout_marginStart="@dimen/evenSmallerMargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grndLvlLabel"
+                        android:layout_marginBottom="@dimen/evenSmallerMargin"
+                        android:alpha=".6"
+                        android:textColor="@color/textViews" />
+
+    </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
+

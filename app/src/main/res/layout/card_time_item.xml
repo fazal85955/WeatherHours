@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <ImageView
+                android:contentDescription="@string/TempTitle"
+                android:id="@+id/imgDes"
+                android:src="@android:drawable/ic_secure"
+                android:layout_height="@dimen/card_art"
+                android:layout_width="@dimen/card_art" />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textViews"
+                android:id="@+id/txtTimeTmp"
+                style="@style/Caption" />
+            <RadioButton
+                android:layout_marginTop="@dimen/evenSmallerMargin"
+                android:clickable="false"
+                android:id="@+id/radioTime"
+                android:layout_height="wrap_content"
+                android:layout_width="64dp"
+                android:background="@drawable/radiobox"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:button="@android:color/transparent"
+                android:paddingStart="@dimen/evenSmallerMargin"
+                android:paddingEnd="@dimen/evenSmallerMargin"
+                android:paddingTop="@dimen/card_corner"
+                android:paddingBottom="@dimen/card_corner"
+                android:textColor="@drawable/radiotext"
+                android:checked="true"
+                android:text=""
+                />
+        </LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/smallMargin">
+
+        <RelativeLayout android:paddingTop="@dimen/bigMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:contentDescription="@string/TempTitle"
+            android:id="@+id/imgTmp"
+            android:layout_alignParentTop="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:tag="0"
+            android:layout_centerHorizontal="true"
+            android:elevation="3dp"
+            android:src="@drawable/day_cloudy" />
+
+
+            <include
+                layout="@layout/card_main"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="@dimen/smallMargin"
+                android:layout_marginEnd="@dimen/smallMargin" />
+
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/current_hour_day"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/ic_access_time_24dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/hour_now"
+                android:padding="@dimen/evenSmallerMargin"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="12sp"
+                android:shadowColor="@color/nightColor"
+                android:elevation="5dp"
+                android:text="@string/hourNowTitle"
+                android:textColor="@color/textViews" />
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bigMargin" />
+
+        <include layout="@layout/card_days2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/layoutMargin" />
+
+
+
+        <include layout="@layout/card_time2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/layoutMargin" />
+
+        <TextView style="@style/backTexts"
+            android:text="@string/detailedTxtCaption" />
+
+        <include layout="@layout/card_wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/layoutMargin" />
+
+        <include layout="@layout/card_sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/layoutMargin" />
+
+        <include layout="@layout/card_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/layoutMargin" />
+
+        <TextView style="@style/backTexts"
+            android:text="@string/copyrightLabel" />
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0F2027</color><!--500-->
+    <color name="colorPrimaryDark">#203A43</color><!--700-->
+    <color name="colorAccent">#2C5364</color><!--200-->
+    <color name="black_overlay">#66000000</color>
+
+    <color name="cardViews">#22000000</color>
+    <color name="textViews">@android:color/white</color>
+
+    <color name="nightColor">#141E30</color>
+    <color name="sNightColor">#243B55</color>
+    <color name="dayColor">#49A0D9</color>
+    <color name="sDayColor">#0DA5FA</color>
+
+    <color name="frameBackground">#ba000000</color>
+    <color name="frameBorder">@android:color/darker_gray</color>
+</resources>

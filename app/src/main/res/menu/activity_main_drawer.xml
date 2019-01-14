@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:orderInCategory="0"
+        android:checkableBehavior="single"
+        android:id="@+id/homeGroup">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_Home" />
+    </group>
+    <item android:title="@string/catModify"
+        android:orderInCategory="1"
+        android:id="@+id/toolsGroup">
+        <menu>
+            <item
+                android:checkable="false"
+                android:id="@+id/nav_add"
+                android:icon="@drawable/ic_add_location"
+                android:title="@string/menu_Add" />
+            <item
+                android:checkable="false"
+                android:id="@+id/nav_remove"
+                android:icon="@drawable/ic_delete_black_24dp"
+                android:title="@string/menu_Delete" />
+        </menu>
+    </item>
+    <group android:orderInCategory="2"
+        android:checkableBehavior="single"
+        android:id="@+id/cityGroup">
+        <!--item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Slideshow" /-->
+    </group>
+    <item android:title="@string/catCommunicate"
+        android:orderInCategory="3"
+        android:id="@+id/bottomGroup">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/action_settings" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/imgShare" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_star_black_24dp"
+                android:title="@string/action_RateUs" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="@string/pref_header_about" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "427670440483",
+    "firebase_url": "https://weather-hours.firebaseio.com",
+    "project_id": "weather-hours",
+    "storage_bucket": "weather-hours.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427670440483:android:6d88c0b2ef90d9b9",
+        "android_client_info": {
+          "package_name": "com.apps.sfrcreativity.weatherhours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427670440483-vtrtc2fr0bca33e0c067s2bqv95lc80t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.sfrcreativity.weatherhours",
+            "certificate_hash": "386c68f79687ff399e47a402f441e1a3b0280746"
+          }
+        },
+        {
+          "client_id": "427670440483-v1v3n6ausej9o0dslupd9olqidgsq4bh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQqNA2jStoTxpgxMAw8hWzEe7vrHWLjJI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427670440483-v1v3n6ausej9o0dslupd9olqidgsq4bh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

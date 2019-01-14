@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Preference/-->
+    <PreferenceCategory android:title="@string/keyWeather">
+
+        <ListPreference
+            android:key="@string/tempDefaultValue"
+            android:entries="@array/tmpUnitTitle"
+            android:summary="%s"
+            android:icon="@drawable/temperature_preference"
+            android:entryValues="@array/tmpUnitValues"
+            android:defaultValue="@string/tempDefaultValue"
+            android:title="@string/tempPref" />
+
+        <ListPreference
+            android:key="@string/windDefaultValue"
+            android:entries="@array/windUnitTitles"
+            android:summary="%s"
+            android:icon="@drawable/wind_preference"
+            android:entryValues="@array/windUnitValues"
+            android:defaultValue="@string/windDefaultValue"
+            android:title="@string/windPref" />
+
+        <ListPreference
+            android:key="@string/pressureDefaultValue"
+            android:entries="@array/pressureUnitTitles"
+            android:summary="%s"
+            android:icon="@drawable/pressure_preference"
+            android:entryValues="@array/pressureUnitValues"
+            android:defaultValue="@string/pressureDefaultValue"
+            android:title="@string/pressurePref" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/keyClock" >
+
+        <ListPreference
+            android:key="@string/weatherUpdateDefaultValue"
+            android:entries="@array/weatherUpdateRateTitles"
+            android:summary="%s"
+            android:icon="@drawable/ic_update_black_24dp"
+            android:entryValues="@array/weatherUpdateRateValues"
+            android:defaultValue="@string/weatherUpdateDefaultValue"
+            android:title="@string/weatherPref" />
+
+        <ListPreference
+            android:key="@string/timeFormatDefaultValue"
+            android:icon="@drawable/ic_access_time_black_24dp"
+            android:entries="@array/timeFormatTitles"
+            android:summary="%s"
+            android:entryValues="@array/timeFormatValues"
+            android:defaultValue="@string/timeFormatDefaultValue"
+            android:title="@string/time" />
+
+        <ListPreference
+            android:key="@string/dateFormatDefaultValue"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:entries="@array/dateFormatTitles"
+            android:summary="%s"
+            android:entryValues="@array/dateFormatValues"
+            android:defaultValue="@string/dateFormatDefaultValue"
+            android:title="@string/dateFormatPref" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_header_about">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/summary_about" />
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/title_version" />
+
+    </PreferenceCategory>
+
+
+
+
+
+
+</PreferenceScreen>

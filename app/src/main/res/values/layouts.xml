@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="cardviews" parent="Widget.MaterialComponents.CardView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="cardElevation">@dimen/card_elevation</item>
+    <item name="cardCornerRadius">@dimen/card_corner</item>
+    <item name="cardBackgroundColor">@color/black_overlay</item>
+</style>
+    <style name="constraints">
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+    <style name="constraints.size">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layoutMargin">
+        <item name="android:layout_marginTop">@dimen/evenSmallerMargin</item>
+        <item name="android:layout_marginBottom">@dimen/evenSmallerMargin</item>
+        <item name="android:layout_marginStart">@dimen/smallMargin</item>
+        <item name="android:layout_marginEnd">@dimen/smallMargin</item>
+    </style>
+
+    <style name="backTexts">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_marginTop">@dimen/smallMargin</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+
+    <style name="customRadio" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/radiobox</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">@drawable/radiotext</item>
+    </style>
+
+
+    <style name="groupLayout">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="groupLayout2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="android:layout_marginBottom">@dimen/evenSmallerMargin</item>
+    </style>
+
+    <style name="Caption.tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textViews</item>
+        <item name="android:layout_marginTop">@dimen/evenSmallerMargin</item>
+    </style>
+
+    <style name="Caption.tv2" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textViews</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Caption.tv3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textViews</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="OVERLINE.tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textViews</item>
+    </style>
+
+
+    <style name="H6.tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textViews</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="H4.tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textViews</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="img24">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="lV">
+        <item name="android:alpha">.37</item>
+        <item name="android:background">@color/textViews</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+    </style>
+
+    <style name="lineView" parent="lV">
+        <item name="android:layout_marginTop">@dimen/evenSmallerMargin</item>
+        <item name="layout_constraintTop_toBottomOf">@id/td</item>
+    </style>
+
+</resources>
